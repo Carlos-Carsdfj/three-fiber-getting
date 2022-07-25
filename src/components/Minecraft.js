@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Minecraft({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('./minecraft/Minecraft.gltf')
+  const { nodes, materials } = useGLTF('./models/minecraft/Minecraft.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -156,4 +156,4 @@ export default function Minecraft({ ...props }) {
   )
 }
 
-useGLTF.preload('./minecraft/Minecraft.gltf')
+useGLTF.preload('./models/minecraft/Minecraft.gltf')
